@@ -10,3 +10,44 @@
   font-size: 62.5%;
 }
 
+body {
+  background-color: #FFF;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  margin: 15rem 23rem;
+  justify-content: space-between;
+}
+button {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+#timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#time span {
+  color: #323238;
+  font-size: 12.61rem;
+}
+
+#button-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+#cards-sons { 
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: 1fr 1fr;
+}
