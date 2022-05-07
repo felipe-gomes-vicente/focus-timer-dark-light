@@ -1,3 +1,5 @@
+import { Sounds } from "./sounds.js";
+
 export function Timer({
   minutesDisplay,
   secondsDisplay,
@@ -30,6 +32,7 @@ export function Timer({
         if(isFinished) {
           stopControls()
           updateDisplay()
+          Sounds().timeEnd()
           return
         }
   
@@ -63,10 +66,10 @@ export function Timer({
   return {
     countdown,
     stop,
-    updateDisplay,
     hold,
     increment,
-    decrement
+    decrement,
+    updateDisplay,
   }
 
 }

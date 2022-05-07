@@ -1,6 +1,7 @@
 import { Events } from "./events.js";
 import { Controls } from "./controls.js";
 import { Timer } from "./timer.js";
+import { Sounds } from "./sounds.js";
 import {
   minutesDisplay,
   secondsDisplay,
@@ -21,4 +22,6 @@ const timer = Timer({
   stopControls: controls.stop
 })
 
-Events({ controls, timer });
+const sounds = Sounds()
+
+Events({ controls, timer, sounds });
