@@ -1,6 +1,7 @@
 export function Controls({
   buttonPause,
   buttonPlay,
+  buttonStop,
 }) {
 
   function play() {
@@ -13,10 +14,16 @@ export function Controls({
     buttonPlay.classList.remove('hide')
   }
 
+  function stop() {
+    buttonPause.classList.add('hide')
+    buttonPlay.classList.remove('hide')
+  }
+
 
   
   return {
     play,
-    pause
+    pause,
+    stop
   }
 }
