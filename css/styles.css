@@ -12,16 +12,20 @@
 
 body {
   background-color: #FFF;
-  display: flex;
   font-family: 'Roboto', sans-serif;
-  margin: 15rem 23rem;
-  justify-content: space-between;
 }
+
 button {
   background-color: transparent;
   border: none;
 
   cursor: pointer;
+}
+
+main {
+  display: flex;
+  margin: 15rem 23rem;
+  justify-content: space-between;
 }
 
 .hide {
@@ -49,5 +53,25 @@ button {
 #cards-sons { 
   display: grid;
   gap: 3.2rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'A B'
+    'C D';
 }
+
+.card {
+  border: 0 none;
+  border-radius: 2.4rem;
+  background-color: #E1E1E6;
+  transition: all 400ms;
+
+}
+
+.card:hover {
+  background-color: #8A2BE2;
+  transform: scale(1.06);
+}
+
+.card svg:hover path {
+  fill: #FFF;
+}
+

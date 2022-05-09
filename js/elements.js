@@ -9,6 +9,10 @@ const btnSoundForest = document.querySelector(".forest");
 const btnSoundRain = document.querySelector(".rain");
 const btnSoundCoffeeShop = document.querySelector(".coffee-shop");
 const btnSoundFireplace = document.querySelector(".fireplace");
+const cardOne = document.querySelector('.one')
+const cardTwo = document.querySelector('.two')
+const cardThree = document.querySelector('.three')
+const cardFour = document.querySelector('.four')
 
 export {
   minutesDisplay,
@@ -22,4 +26,8 @@ export {
   btnSoundRain,
   btnSoundCoffeeShop,
   btnSoundFireplace,
+  cardOne,
+  cardTwo,
+  cardThree,
+  cardFour
 };

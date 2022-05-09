@@ -40,4 +40,8 @@ export function Events({ controls, timer, sounds }) {
     sounds.pressButton()
   })
 
+  btnSoundForest.addEventListener('click', function(){
+    
+  })
+
 }
