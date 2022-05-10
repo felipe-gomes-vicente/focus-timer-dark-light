@@ -74,3 +74,16 @@ main {
   fill: #FFF;
 }
 
+.press {
+  background-color: #8A2BE2;
+  border-radius: 2.4rem;
+  transition: all 400ms;
+}
+
+.press svg path {
+  fill: #FFF;
+}
+
+.add {
+  fill: white;
+}

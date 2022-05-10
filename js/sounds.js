@@ -6,7 +6,6 @@ export function Sounds() {
   const coffeeShopAudio = new Audio("./sounds/Cafeteria.wav")
   const fireplaceAudio = new Audio("./sounds/Lareira.wav")
 
-  let isPlay = true
   forestAudio.loop = true
   rainAudio.loop = true
   coffeeShopAudio.loop = true
@@ -20,54 +19,14 @@ export function Sounds() {
     kitchenTimer.play()
   }
   
-  function forestPlay() {
-    if (isPlay) {
-      isPlay = false
-      forestAudio.play()
-    } else {
-      isPlay = true
-      forestAudio.pause()
-    }
-  }
   
-  function rainPlay() {
-    if (isPlay) {
-      isPlay = false
-      rainAudio.play()
-    } else {
-      isPlay = true
-      rainAudio.pause()
-    }
-  }
-  
-  function coffeeShopPlay() {
-    if (isPlay) {
-      isPlay = false
-      coffeeShopAudio.play()
-    } else {
-      isPlay = true
-      coffeeShopAudio.pause()
-    }
-  }
-  
-  function fireplacePlay() {
-    if (isPlay) {
-      isPlay = false
-      fireplaceAudio.play()
-    } else {
-      isPlay = true
-      fireplaceAudio.pause()
-    }
-  }
-
-
   return {
     pressButton,
     timeEnd,
-    forestPlay,
-    rainPlay,
-    coffeeShopPlay,
-    fireplacePlay
+    forestAudio,
+    rainAudio,
+    coffeeShopAudio,
+    fireplaceAudio
   }
 
 }

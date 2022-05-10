@@ -7,13 +7,21 @@ import {
   secondsDisplay,
   buttonPlay,
   buttonPause,
-  buttonStop
+  buttonStop,
+  btnSoundForest,
+  btnSoundRain,
+  btnSoundCoffeeShop,
+  btnSoundFireplace,
 } from "./elements.js";
 
 const controls = Controls({
   buttonPause,
   buttonPlay,
-  buttonStop
+  buttonStop,
+  btnSoundForest,
+  btnSoundRain,
+  btnSoundCoffeeShop,
+  btnSoundFireplace
 })
 
 const timer = Timer({
