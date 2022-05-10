@@ -59,7 +59,6 @@ main {
 }
 
 .card {
-  border: 0 none;
   border-radius: 2.4rem;
   background-color: #E1E1E6;
   transition: all 400ms;

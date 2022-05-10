@@ -1,7 +1,6 @@
 export function Controls({
   buttonPause,
-  buttonPlay,
-  buttonStop,
+  buttonPlay
 }) {
 
   function play() {

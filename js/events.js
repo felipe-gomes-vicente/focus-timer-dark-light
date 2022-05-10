@@ -41,7 +41,19 @@ export function Events({ controls, timer, sounds }) {
   })
 
   btnSoundForest.addEventListener('click', function(){
-    
+    sounds.forestPlay()
+  })
+
+  btnSoundRain.addEventListener('click', function(){
+    sounds.rainPlay()
+  })
+
+  btnSoundCoffeeShop.addEventListener('click', function(){
+    sounds.coffeeShopPlay()
+  })
+
+  btnSoundFireplace.addEventListener('click', function(){
+    sounds.fireplacePlay()
   })
 
 }
