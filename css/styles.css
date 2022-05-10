@@ -26,6 +26,7 @@ main {
   display: flex;
   justify-content: center;
   gap: clamp(5rem, 10rem + 5vw, 20rem);
+  /* gap: 20rem; */
   flex-wrap: wrap;
   padding-top: 15rem;
 }
@@ -84,4 +85,13 @@ main {
 
 .press svg path {
   fill: #FFF;
+}
+
+@media (max-width: 425px) {
+  main {
+    padding-top: 10rem;
+    gap: 5rem;
+  }
+  
+
 }
