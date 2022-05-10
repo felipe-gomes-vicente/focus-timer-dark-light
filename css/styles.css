@@ -13,19 +13,21 @@
 body {
   background-color: #FFF;
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
 }
 
 button {
   background-color: transparent;
   border: none;
-
   cursor: pointer;
 }
 
 main {
   display: flex;
-  margin: 15rem 23rem;
-  justify-content: space-between;
+  justify-content: center;
+  gap: clamp(5rem, 10rem + 5vw, 20rem);
+  flex-wrap: wrap;
+  padding-top: 15rem;
 }
 
 .hide {
@@ -40,7 +42,7 @@ main {
 
 #time span {
   color: #323238;
-  font-size: 12.61rem;
+  font-size: clamp(10rem, 10rem + 10vw, 12rem);
 }
 
 #button-controls {
@@ -82,8 +84,4 @@ main {
 
 .press svg path {
   fill: #FFF;
-}
-
-.add {
-  fill: white;
 }
