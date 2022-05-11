@@ -8,22 +8,25 @@ export function Controls({
   btnSoundRain,
   btnSoundCoffeeShop,
   btnSoundFireplace,
-  btnLight,
-  btnDark,
-  body
+  sunImg,
+  moonImg
 }) {
   let isPlay = true
+  let isDark = true
 
-  function lightMode() {
-    btnDark.classList.remove('hide')
-    btnLight.classList.add('hide')
-    body.classList.add('dark-mode')
-  }
-
-  function darkMode() {
-    btnLight.classList.remove('hide')
-    btnDark.classList.add('hide')
-    body.classList.remove('dark-mode')
+  function iconToggle() {
+    
+    if(isDark){
+      isDark = false;
+      moonImg.classList.remove('hide')
+      sunImg.classList.add('hide')
+      document.body.classList.add("dark-theme");
+    } else {
+      isDark = true;
+      sunImg.classList.remove('hide')
+      moonImg.classList.add('hide')
+        document.body.classList.remove("dark-theme");
+    }
   }
 
 
@@ -109,7 +112,6 @@ export function Controls({
     rainPlay,
     coffeeShopPlay,
     fireplacePlay,
-    darkMode,
-    lightMode
+    iconToggle
   }
 }

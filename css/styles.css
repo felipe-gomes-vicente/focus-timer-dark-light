@@ -2,17 +2,19 @@
 
 :root {
   --bg: #FFF;
-  --fc-primary: #323238;
+  --bg-secondary: #29292E;
   --bg-border: #8A2BE2;
-  --bg-cards: #E1E1E6;
+  --bg-cards: #C4C4CC;
+  --fc-primary: #323238;
 }
 
-/* .dark-mode:root {
+.dark-theme {
   --bg: #000;
-  --fc-primary: #FFF;
+  --bg-secondary:#C4C4CC;
   --bg-border: #8A2BE2;
-  --bg-cards: #E1E1E6;
-} */
+  --bg-cards: #29292E;
+  --fc-primary: #FFF;
+}
 
 * {
   margin: 0;
@@ -30,14 +32,16 @@ body {
   min-height: 100vh;
 }
 
-body.dark-mode {
-  background-color: #000;
-}
-
 button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  top: 30px;
+  right: 30px;
 }
 
 main {
@@ -63,10 +67,6 @@ main {
   font-size: clamp(10rem, 10rem + 10vw, 12rem);
 }
 
-#time.dark-mode span {
-  color: #FFF;
-}
-
 #button-controls {
   display: flex;
   align-items: center;
@@ -75,13 +75,8 @@ main {
 }
 
 #button-controls button svg path {
-  fill: var(--fc-primary)
+  fill: var(--bg-secondary)
 }
-
-#button-controls.dark-mode button svg path {
-  fill: #FFF;
-}
-
 
 #button-controls button svg:hover path {
   fill: var(--bg-border);
@@ -99,6 +94,10 @@ main {
   border-radius: 2.4rem;
   background-color: var(--bg-cards);
   transition: all 400ms;
+}
+
+.card svg path {
+  fill: var(--bg-secondary);
 }
 
 .card:hover {
@@ -121,6 +120,12 @@ main {
 }
 
 @media (max-width: 425px) {
+
+  nav {
+    top: 10px;
+    right: 10px;
+  }
+  
   main {
     padding-top: 10rem;
     gap: 5rem;
