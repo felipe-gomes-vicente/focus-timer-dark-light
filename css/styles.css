@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 
+:root {
+  --bg: #FFF;
+  --fc-primary: #323238;
+  --bg-border: #8A2BE2;
+  --bg-cards: #E1E1E6;
+}
+
+/* .dark-mode:root {
+  --bg: #000;
+  --fc-primary: #FFF;
+  --bg-border: #8A2BE2;
+  --bg-cards: #E1E1E6;
+} */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +25,13 @@
 }
 
 body {
-  background-color: #FFF;
+  background-color: var(--bg);
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
+}
+
+body.dark-mode {
+  background-color: #000;
 }
 
 button {
@@ -26,7 +44,6 @@ main {
   display: flex;
   justify-content: center;
   gap: clamp(5rem, 10rem + 5vw, 20rem);
-  /* gap: 20rem; */
   flex-wrap: wrap;
   padding-top: 15rem;
 }
@@ -42,8 +59,12 @@ main {
 }
 
 #time span {
-  color: #323238;
+  color: var(--fc-primary);
   font-size: clamp(10rem, 10rem + 10vw, 12rem);
+}
+
+#time.dark-mode span {
+  color: #FFF;
 }
 
 #button-controls {
@@ -51,6 +72,19 @@ main {
   align-items: center;
   justify-content: center;
   gap: 4rem;
+}
+
+#button-controls button svg path {
+  fill: var(--fc-primary)
+}
+
+#button-controls.dark-mode button svg path {
+  fill: #FFF;
+}
+
+
+#button-controls button svg:hover path {
+  fill: var(--bg-border);
 }
 
 #cards-sons { 
@@ -63,28 +97,27 @@ main {
 
 .card {
   border-radius: 2.4rem;
-  background-color: #E1E1E6;
+  background-color: var(--bg-cards);
   transition: all 400ms;
-
 }
 
 .card:hover {
-  background-color: #8A2BE2;
+  background-color: var(--bg-border);
   transform: scale(1.06);
 }
 
 .card svg:hover path {
-  fill: #FFF;
+  fill: var(--bg);
 }
 
 .press {
-  background-color: #8A2BE2;
+  background-color: var(--bg-border);
   border-radius: 2.4rem;
   transition: all 400ms;
 }
 
 .press svg path {
-  fill: #FFF;
+  fill: var(--bg);
 }
 
 @media (max-width: 425px) {
@@ -92,6 +125,4 @@ main {
     padding-top: 10rem;
     gap: 5rem;
   }
-  
-
 }

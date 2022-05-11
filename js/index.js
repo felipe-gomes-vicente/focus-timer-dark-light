@@ -2,6 +2,7 @@ import { Events } from "./events.js";
 import { Controls } from "./controls.js";
 import { Timer } from "./timer.js";
 import { Sounds } from "./sounds.js";
+// import { Darkomde } from "./darkomde.js";
 import {
   minutesDisplay,
   secondsDisplay,
@@ -12,6 +13,9 @@ import {
   btnSoundRain,
   btnSoundCoffeeShop,
   btnSoundFireplace,
+  btnLight,
+  btnDark,
+  body
 } from "./elements.js";
 
 const controls = Controls({
@@ -21,7 +25,10 @@ const controls = Controls({
   btnSoundForest,
   btnSoundRain,
   btnSoundCoffeeShop,
-  btnSoundFireplace
+  btnSoundFireplace,
+  btnLight,
+  btnDark,
+  body
 })
 
 const timer = Timer({
@@ -32,4 +39,7 @@ const timer = Timer({
 
 const sounds = Sounds()
 
-Events({ controls, timer, sounds });
+// const darkmode = Darkomde({
+// })
+
+Events({ controls, timer, sounds,  });

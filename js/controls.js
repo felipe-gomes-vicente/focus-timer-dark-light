@@ -8,8 +8,24 @@ export function Controls({
   btnSoundRain,
   btnSoundCoffeeShop,
   btnSoundFireplace,
+  btnLight,
+  btnDark,
+  body
 }) {
   let isPlay = true
+
+  function lightMode() {
+    btnDark.classList.remove('hide')
+    btnLight.classList.add('hide')
+    body.classList.add('dark-mode')
+  }
+
+  function darkMode() {
+    btnLight.classList.remove('hide')
+    btnDark.classList.add('hide')
+    body.classList.remove('dark-mode')
+  }
+
 
   function forestPlay() {
     if (isPlay) {
@@ -92,6 +108,8 @@ export function Controls({
     forestPlay,
     rainPlay,
     coffeeShopPlay,
-    fireplacePlay
+    fireplacePlay,
+    darkMode,
+    lightMode
   }
 }

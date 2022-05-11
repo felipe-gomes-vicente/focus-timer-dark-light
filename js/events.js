@@ -8,6 +8,8 @@ import {
   btnSoundRain,
   btnSoundCoffeeShop,
   btnSoundFireplace,
+  btnLight,
+  btnDark
 } from "./elements.js"
 
 
@@ -54,6 +56,14 @@ export function Events({ controls, timer, sounds }) {
 
   btnSoundFireplace.addEventListener('click', function(){
     controls.fireplacePlay()
+  })
+
+  btnLight.addEventListener('click', function(){
+    controls.lightMode()
+  })
+
+  btnDark.addEventListener('click', function(){
+    controls.darkMode()
   })
 
 }
