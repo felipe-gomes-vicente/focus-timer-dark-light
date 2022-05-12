@@ -15,7 +15,7 @@ import {
   icon,
   sunImg,
   moonImg,
-  bgForest,
+  bgNature,
   bgRain,
   bgCoffee,
   bgFire
@@ -32,7 +32,7 @@ const controls = Controls({
   icon,
   sunImg,
   moonImg,
-  bgForest,
+  bgNature,
   bgRain,
   bgCoffee,
   bgFire

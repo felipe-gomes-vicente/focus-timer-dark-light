@@ -10,7 +10,7 @@ export function Controls({
   btnSoundFireplace,
   sunImg,
   moonImg,
-  bgForest,
+  bgNature,
   bgRain,
   bgCoffee,
   bgFire
@@ -38,18 +38,18 @@ export function Controls({
     if (isPlay) {
       isPlay = false
       sounds.forestAudio.play()
-      btnSoundForest.classList.remove('card')
       btnSoundForest.classList.add('press')
+      btnSoundForest.classList.remove('card')
+      bgNature.classList.remove('hide')
       document.body.classList.add("toggle-theme");
-      bgForest.classList.remove('hide')
   
     } else {
       isPlay = true
       sounds.forestAudio.pause()
       btnSoundForest.classList.remove('press')
       btnSoundForest.classList.add('card')
+      bgNature.classList.add('hide')
       document.body.classList.remove("toggle-theme");
-      bgForest.classList.add('hide')
     }
   }
   

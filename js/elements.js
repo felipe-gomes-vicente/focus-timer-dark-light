@@ -24,7 +24,7 @@ const sunImg = document.querySelector(".sun");
 const moonImg = document.querySelector(".moon");
 const icon = document.getElementById("icon");
 
-const bgForest = document.querySelector('.bgForest')
+const bgNature = document.querySelector('.bgNature')
 const bgRain = document.querySelector('.bgRain')
 const bgCoffee = document.querySelector('.bgCoffee')
 const bgFire = document.querySelector('.bgFire')
@@ -52,7 +52,7 @@ export {
   volRain,
   volCoffeeShop,
   volFireplace,
-  bgForest,
+  bgNature,
   bgRain,
   bgCoffee,
   bgFire
