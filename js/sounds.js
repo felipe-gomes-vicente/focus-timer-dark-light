@@ -1,19 +1,19 @@
 export function Sounds() {
   const buttonPressAudio = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true")
   const kitchenTimer = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true")
-  const forestAudio = new Audio("./sounds/Floresta.wav")
-  const rainAudio = new Audio("./sounds/Chuva.wav")
-  const coffeeShopAudio = new Audio("./sounds/Cafeteria.wav")
-  const fireplaceAudio = new Audio("./sounds/Lareira.wav")
+  const bgAudioNature = new Audio("./sounds/Floresta.wav")
+  const bgAudioRain = new Audio("./sounds/Chuva.wav")
+  const bgAudioCoffee = new Audio("./sounds/Cafeteria.wav")
+  const bgAudioFire = new Audio("./sounds/Lareira.wav")
 
-  forestAudio.loop = true
-  rainAudio.loop = true
-  coffeeShopAudio.loop = true
-  fireplaceAudio.loop = true
-  forestAudio.volume = 0.5
-  rainAudio.volume = 0.5
-  coffeeShopAudio.volume = 0.5
-  fireplaceAudio.volume = 0.5
+  bgAudioNature.loop = true
+  bgAudioRain.loop = true
+  bgAudioCoffee.loop = true
+  bgAudioFire.loop = true
+  bgAudioNature.volume = 0.5
+  bgAudioRain.volume = 0.5
+  bgAudioCoffee.volume = 0.5
+  bgAudioFire.volume = 0.5
   
   function pressButton() {
     buttonPressAudio.play()
@@ -26,10 +26,10 @@ export function Sounds() {
   return {
     pressButton,
     timeEnd,
-    forestAudio,
-    rainAudio,
-    coffeeShopAudio,
-    fireplaceAudio
+    bgAudioNature,
+    bgAudioRain,
+    bgAudioCoffee,
+    bgAudioFire
   }
 
 }

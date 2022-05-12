@@ -67,18 +67,18 @@ export function Events({ controls, timer, sounds }) {
 
 
   volForest.addEventListener('input', () => {
-    sounds.forestAudio.volume = volForest.value
+    sounds.bgAudioNature.volume = volForest.value
   })
  
   volRain.addEventListener('input', () => {
-    sounds.rainAudio.volume = volRain.value
+    sounds.bgAudioRain.volume = volRain.value
   })
 
   volCoffeeShop.addEventListener('input', () => {
-    sounds.coffeeShopAudio.volume = volCoffeeShop.value
+    sounds.bgAudioCoffee.volume = volCoffeeShop.value
   })
 
   volFireplace.addEventListener('input', () => {
-    sounds.fireplaceAudio.volume = volFireplace.value
+    sounds.bgAudioFire.volume = volFireplace.value
   })
 }
