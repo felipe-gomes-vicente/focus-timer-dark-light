@@ -18,6 +18,7 @@ export function Controls({
   let isPlay = true
   let isDark = true
 
+  /* ======= Função icon toggle dark mode ========== */
   function iconToggle() {
     
     if(isDark){
@@ -33,7 +34,7 @@ export function Controls({
     }
   }
 
-
+  /* ======= Play/Pause Forest/Nature ========== */
   function forestPlay() {
     if (isPlay) {
       isPlay = false
@@ -53,6 +54,7 @@ export function Controls({
     }
   }
   
+  /* ======= Play/Pause Rain ========== */
   function rainPlay() {
     if (isPlay) {
       isPlay = false
@@ -71,6 +73,7 @@ export function Controls({
     }
   }
 
+  /* ======= Play/Pause Coffee Shop ========== */
   function coffeeShopPlay() {
     if (isPlay) {
       isPlay = false
@@ -89,6 +92,7 @@ export function Controls({
     }
   }
   
+  /* ======= Play/Pause Fireplace ========== */
   function fireplacePlay() {
     if (isPlay) {
       isPlay = false
@@ -107,17 +111,19 @@ export function Controls({
     }
   }
 
-
+  /* ======= Play/Pause controls timer ========== */
   function play() {
     buttonPause.classList.remove('hide')
     buttonPlay.classList.add('hide')
   }
 
+  /* ======= Pause controls timer ========== */
   function pause() {
     buttonPause.classList.add('hide')
     buttonPlay.classList.remove('hide')
   }
 
+  /* ======= Stop controls timer ========== */
   function stop() {
     buttonPause.classList.add('hide')
     buttonPlay.classList.remove('hide')

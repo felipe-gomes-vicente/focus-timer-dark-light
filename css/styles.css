@@ -1,13 +1,20 @@
+/* Google Fonts Typography*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 
+/* CSS variables Default */
 :root {
   --bg: #FFF;
   --bg-secondary: #29292E;
   --bg-border: #8A2BE2;
   --bg-cards: #C4C4CC;
   --fc-primary: #323238;
+
+  font-size: 62.5%;
+
+  --ff-roboto: 'Roboto', sans-serif;
 }
 
+/* CSS variables  Dark mode*/
 .dark-theme {
   --bg: #000;
   --bg-secondary:#C4C4CC;
@@ -16,6 +23,7 @@
   --fc-primary: #FFF;
 }
 
+/* CSS variables to toggle background images*/
 .toggle-theme {
   --bg: #000;
   --bg-secondary:#C4C4CC;
@@ -24,34 +32,40 @@
   --fc-primary: #C4C4CC;
 }
 
+/* HTML5 display-role reset for browsers */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  font-size: 62.5%;
-}
 
+/* ============= Body =============== */
 body {
   background-color: var(--bg);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--ff-roboto);
   min-height: 100vh;
 }
 
+/* ============= Global =============== */
 button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
+.hide {
+  display: none;
+}
+
+/* =========== Navigation ============= */
 nav {
   position: fixed;
   top: 30px;
   right: 30px;
 }
 
+/* ============= Main =============== */
 main {
   display: flex;
   justify-content: center;
@@ -60,10 +74,7 @@ main {
   padding-top: 15rem;
 }
 
-.hide {
-  display: none;
-}
-
+/* ============= Timer =============== */
 #timer {
   display: flex;
   flex-direction: column;
@@ -75,6 +86,7 @@ main {
   font-size: clamp(10rem, 10rem + 10vw, 12rem);
 }
 
+/* ======== Button Controls ========== */
 #button-controls {
   display: flex;
   align-items: center;
@@ -90,6 +102,7 @@ main {
   fill: var(--bg-border);
 }
 
+/* ======= Button Cards Sons ========= */
 #cards-sons { 
   display: grid;
   gap: 3.2rem;
@@ -118,6 +131,7 @@ main {
   fill: var(--bg);
 }
 
+/* ======= Button Press cards ========== */
 .press {
   position: relative;
   background-color: var(--bg-border);
@@ -129,6 +143,7 @@ main {
   fill: var(--bg);
 }
 
+/* ======= Volume cards ========== */
 .vol {
   position: absolute;
   bottom: 2.4rem;
@@ -164,6 +179,7 @@ main {
   background-color: var(--bg);
 }
 
+/* ======= Imagens background ========== */
 .bgNature, .bgRain, .bgCoffee, .bgFire {
   object-fit: cover;
   width: 100vw;
@@ -172,6 +188,27 @@ main {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+/* ======= Footer ========== */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+  font-size: 2rem;
+  color: var(--fc-primary);
+}
+
+footer a {
+  margin-left: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--fc-primary);
+}
+
+footer a:hover {
+  color: var(--bg-border);
 }
 
 @media (max-width: 425px) {

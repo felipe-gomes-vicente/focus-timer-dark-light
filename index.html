@@ -7,11 +7,29 @@
     <title>Focus Timer</title>
   </head>
   <body>
-    <img src="./images/forest.jpg" alt="fundo imagem de uma floresta" class="bgNature hide" />
-    <img src="./images/rain.jpg" alt="fundo imagem da chuva" class="bgRain hide" />
-    <img src="images/coffee.jpg" alt="fundo imagem de uma cafeteria" class="bgCoffee hide" />
-    <img src="./images/fireplace.jpg" alt="fundo imagem de uma fogueira" class="bgFire hide" />
+    <!-- Imagens background -->
+    <img
+      src="./images/forest.jpg"
+      alt="fundo imagem de uma floresta"
+      class="bgNature hide"
+    />
+    <img
+      src="./images/rain.jpg"
+      alt="fundo imagem da chuva"
+      class="bgRain hide"
+    />
+    <img
+      src="images/coffee.jpg"
+      alt="fundo imagem de uma cafeteria"
+      class="bgCoffee hide"
+    />
+    <img
+      src="./images/fireplace.jpg"
+      alt="fundo imagem de uma fogueira"
+      class="bgFire hide"
+    />
 
+    <!-- Navigation Icon toggle Dark mode -->
     <nav>
       <button id="icon">
         <img
@@ -27,13 +45,16 @@
       </button>
     </nav>
 
+    <!-- Main -->
     <main>
+      <!-- Timer -->
       <section id="timer">
         <div id="time">
-          <span class="minutes">05</span>
+          <span class="minutes">25</span>
           <span>:</span>
           <span class="seconds">00</span>
         </div>
+        <!-- Button Controls Timer -->
         <div id="button-controls">
           <button class="play">
             <svg
@@ -122,6 +143,7 @@
         </div>
       </section>
 
+      <!-- Button Cards Sons -->
       <section id="cards-sons">
         <div class="card one">
           <button class="forest">
@@ -232,7 +254,17 @@
         </div>
       </section>
     </main>
-    
+
+    <!-- Footer -->
+    <footer>
+      Feito com 💜 by
+      <a
+        href="https://github.com/felipe-gomes-vicente/focus-timer-version"
+        target="_blank"
+        >Felipe Vicente</a
+      >
+    </footer>
+
     <script src="./js/index.js" type="module"></script>
   </body>
 </html>
