@@ -14,7 +14,11 @@ import {
   btnSoundFireplace,
   icon,
   sunImg,
-  moonImg
+  moonImg,
+  bgForest,
+  bgRain,
+  bgCoffee,
+  bgFire
 } from "./elements.js";
 
 const controls = Controls({
@@ -27,7 +31,11 @@ const controls = Controls({
   btnSoundFireplace,
   icon,
   sunImg,
-  moonImg
+  moonImg,
+  bgForest,
+  bgRain,
+  bgCoffee,
+  bgFire
 })
 
 const timer = Timer({

@@ -8,7 +8,11 @@ import {
   btnSoundRain,
   btnSoundCoffeeShop,
   btnSoundFireplace,
-  icon
+  icon,
+  volForest,
+  volRain,
+  volCoffeeShop,
+  volFireplace
 } from "./elements.js"
 
 
@@ -61,4 +65,20 @@ export function Events({ controls, timer, sounds }) {
     controls.iconToggle()
   }
 
+
+  volForest.addEventListener('input', () => {
+    sounds.forestAudio.volume = volForest.value
+  })
+ 
+  volRain.addEventListener('input', () => {
+    sounds.rainAudio.volume = volRain.value
+  })
+
+  volCoffeeShop.addEventListener('input', () => {
+    sounds.coffeeShopAudio.volume = volCoffeeShop.value
+  })
+
+  volFireplace.addEventListener('input', () => {
+    sounds.fireplaceAudio.volume = volFireplace.value
+  })
 }

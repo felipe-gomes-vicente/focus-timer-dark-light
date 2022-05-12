@@ -15,10 +15,19 @@ const btnSoundForest = document.querySelector(".forest");
 const btnSoundRain = document.querySelector(".rain");
 const btnSoundCoffeeShop = document.querySelector(".coffee-shop");
 const btnSoundFireplace = document.querySelector(".fireplace");
+const volForest = document.querySelector('#forest')
+const volRain = document.querySelector('#rain')
+const volCoffeeShop = document.querySelector('#coffee-shop')
+const volFireplace = document.querySelector('#fireplace')
 
 const sunImg = document.querySelector(".sun");
 const moonImg = document.querySelector(".moon");
 const icon = document.getElementById("icon");
+
+const bgForest = document.querySelector('.bgForest')
+const bgRain = document.querySelector('.bgRain')
+const bgCoffee = document.querySelector('.bgCoffee')
+const bgFire = document.querySelector('.bgFire')
 
 export {
   minutesDisplay,
@@ -38,5 +47,13 @@ export {
   cardFour,
   icon,
   sunImg,
-  moonImg
+  moonImg,
+  volForest,
+  volRain,
+  volCoffeeShop,
+  volFireplace,
+  bgForest,
+  bgRain,
+  bgCoffee,
+  bgFire
 };

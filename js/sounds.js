@@ -10,6 +10,10 @@ export function Sounds() {
   rainAudio.loop = true
   coffeeShopAudio.loop = true
   fireplaceAudio.loop = true
+  forestAudio.volume = 0.5
+  rainAudio.volume = 0.5
+  coffeeShopAudio.volume = 0.5
+  fireplaceAudio.volume = 0.5
   
   function pressButton() {
     buttonPressAudio.play()
@@ -18,8 +22,7 @@ export function Sounds() {
   function timeEnd() {
     kitchenTimer.play()
   }
-  
-  
+    
   return {
     pressButton,
     timeEnd,

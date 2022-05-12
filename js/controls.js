@@ -9,7 +9,11 @@ export function Controls({
   btnSoundCoffeeShop,
   btnSoundFireplace,
   sunImg,
-  moonImg
+  moonImg,
+  bgForest,
+  bgRain,
+  bgCoffee,
+  bgFire
 }) {
   let isPlay = true
   let isDark = true
@@ -36,11 +40,16 @@ export function Controls({
       sounds.forestAudio.play()
       btnSoundForest.classList.remove('card')
       btnSoundForest.classList.add('press')
+      document.body.classList.add("toggle-theme");
+      bgForest.classList.remove('hide')
+  
     } else {
       isPlay = true
       sounds.forestAudio.pause()
       btnSoundForest.classList.remove('press')
       btnSoundForest.classList.add('card')
+      document.body.classList.remove("toggle-theme");
+      bgForest.classList.add('hide')
     }
   }
   
@@ -50,11 +59,15 @@ export function Controls({
       sounds.rainAudio.play()
       btnSoundRain.classList.remove('card') 
       btnSoundRain.classList.add('press')
+      document.body.classList.add("toggle-theme");
+      bgRain.classList.remove('hide')
     } else {
       isPlay = true
       sounds.rainAudio.pause()
       btnSoundRain.classList.remove('press') 
       btnSoundRain.classList.add('card')
+      document.body.classList.remove("toggle-theme");
+      bgRain.classList.add('hide')
     }
   }
 
@@ -64,11 +77,15 @@ export function Controls({
       sounds.coffeeShopAudio.play()
       btnSoundCoffeeShop.classList.remove('card')
       btnSoundCoffeeShop.classList.add('press')
+      document.body.classList.add("toggle-theme");
+      bgCoffee.classList.remove('hide')
     } else {
       isPlay = true
       sounds.coffeeShopAudio.pause()
       btnSoundCoffeeShop.classList.remove('press') 
       btnSoundCoffeeShop.classList.add('card')
+      document.body.classList.remove("toggle-theme");
+      bgCoffee.classList.add('hide')
     }
   }
   
@@ -78,11 +95,15 @@ export function Controls({
       sounds.fireplaceAudio.play()
       btnSoundFireplace.classList.remove('card')
       btnSoundFireplace.classList.add('press')
+      document.body.classList.add("toggle-theme");
+      bgFire.classList.remove('hide')
     } else {
       isPlay = true
       sounds.fireplaceAudio.pause()
       btnSoundFireplace.classList.remove('press') 
       btnSoundFireplace.classList.add('card')
+      document.body.classList.remove("toggle-theme");
+      bgFire.classList.add('hide')
     }
   }
 

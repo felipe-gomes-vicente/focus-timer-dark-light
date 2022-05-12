@@ -16,6 +16,14 @@
   --fc-primary: #FFF;
 }
 
+.toggle-theme {
+  --bg: #000;
+  --bg-secondary:#C4C4CC;
+  --bg-border: #8A2BE2;
+  --bg-cards: #29292E;
+  --fc-primary: #C4C4CC;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -91,6 +99,7 @@ main {
 }
 
 .card {
+  position: relative;
   border-radius: 2.4rem;
   background-color: var(--bg-cards);
   transition: all 400ms;
@@ -110,6 +119,7 @@ main {
 }
 
 .press {
+  position: relative;
   background-color: var(--bg-border);
   border-radius: 2.4rem;
   transition: all 400ms;
@@ -119,13 +129,58 @@ main {
   fill: var(--bg);
 }
 
+.vol {
+  position: absolute;
+  bottom: 2.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vol {
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 9rem;
+  border-radius: 5rem;
+}
+
+.vol::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 5rem;
+  background: var(--bg);
+  margin-top: -5px;
+}
+
+.vol::-webkit-slider-runnable-track {
+  height: 0.5rem;
+  background: var(--bg);
+  border-radius: 5rem;
+}
+
+.card:hover .vol::-webkit-slider-thumb,
+.card:hover .vol::-webkit-slider-runnable-track {
+  background-color: var(--bg);
+}
+
+.bgNature, .bgRain, .bgCoffee, .bgFire {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 @media (max-width: 425px) {
 
   nav {
     top: 10px;
     right: 10px;
   }
-  
+
   main {
     padding-top: 10rem;
     gap: 5rem;
