@@ -18,7 +18,7 @@ import {
   bgNature,
   bgRain,
   bgCoffee,
-  bgFire
+  bgFire,
 } from "./elements.js";
 
 const controls = Controls({
@@ -35,15 +35,15 @@ const controls = Controls({
   bgNature,
   bgRain,
   bgCoffee,
-  bgFire
-})
+  bgFire,
+});
 
 const timer = Timer({
   minutesDisplay,
   secondsDisplay,
-  stopControls: controls.stop
-})
+  stopControls: controls.stop,
+});
 
-const sounds = Sounds()
+const sounds = Sounds();
 
 Events({ controls, timer, sounds });

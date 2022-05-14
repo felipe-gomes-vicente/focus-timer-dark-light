@@ -27,6 +27,7 @@ O que foi feito:
 - Funcionalidade de botões de controle do play aumenta em mais 5 minutos o tempo do timer;
 - Funcionalidade de botões de controle do play dimuinuir em mais 5 minutos o tempo do timer;
 - Cards de audio que acionar som e pausa;
+- Controle de Audio pelo input range;
 - Variáveis, operadores matemáticos e operadores comparativos;
 - Tipos de dados no javascipt;
 - Manipular a DOM;
