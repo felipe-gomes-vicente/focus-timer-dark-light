@@ -1,115 +1,116 @@
 # Focus Timer Dark
 
 <h1 align="center">
-    <img alt="Gif do projeto concluído Focus Timer Dark" title="gif" src="./images/focus-timer.gif" />
+    <img alt="Gif of the finished project Focus Timer Dark" title="gif" src="./images/focus-timer.gif" />
 </h1>
 
 <br>
 
-### 💻 Focus Timer Dark
+### 💻 Focus Timer Dark Mode
 
-O desafio é construír uma página completa com contagem regressiva no estilo Pomodoro  
-com HTML, Javascript e CSS, foi aplicado responsvidade e linguagem de programação 
-javascript com em destaque tema escuro para acessibilidade, cards de audio, funções 
-callbacks, Clean Code, injeção de dependências e padrão factory.
-Desafeei-me e apliquei imagens diferentes para cada cards de audio, refatoração 
-e melhoria do algoritmo e adição de footer.
+Build a complete page with a Pomodoro-style countdown with HTML, Javascript and CSS, 
+responsiveness and programming language were applied javascript with dark theme 
+highlighted for accessibility, audio cards, functions callbacks, Clean Code, 
+dependency injection and factory pattern.
+I challenged myself and applied different images to each audio card, refactoring 
+and improving the algorithm and adding footer.
 
-Acesse a página do projeto: [Clique Aqui](https://felipe-gomes-vicente.github.io/focus-timer-dark-light/)
+Watch it in action Deploy: [Click Here](https://felipe-gomes-vicente.github.io/focus-timer-dark-light/)
 
-O que foi feito:
+What was developed:
 
-- Lógica e Algoritmos com Javascript;
-- Desafeei-me e apliquei imagens diferentes para cada cards de audio quando acionado;
-- Refatoração e melhoria do algoritmo e adição de footer;
-- Criação da versão de tema escuro;
-- Funcionalidade de botões de controle do play acionar timer, pausar e parar;
-- Funcionalidade de botões de controle do play aumenta em mais 5 minutos o tempo do timer;
-- Funcionalidade de botões de controle do play dimuinuir em mais 5 minutos o tempo do timer;
-- Cards de audio que acionar som e pausa;
-- Controle de Audio pelo input range;
-- Variáveis, operadores matemáticos e operadores comparativos;
-- Tipos de dados no javascipt;
-- Manipular a DOM;
-- Funções callbacks;
-- Recursividade;
+- Logic and Algorithms with Javascript;
+- I unaffected myself and applied different images to each audio card when activated;
+- Refactoring and improvement of the algorithm and addition of footer;
+- Creation of the dark theme version;
+- Functionality of play control buttons trigger timer, pause and stop;
+- Play control buttons functionality increases the timer time by another 5 minutes;
+- Play control buttons functionality to decrease the timer time by 5 minutes;
+- Audio cards that trigger sound and pause;
+- Audio control by input range;
+- Variables, mathematical operators and comparative operators;
+- Data types in javascript;
+- Manipulate the DOM;
+- Functions Callback;
+- Recursion;
 - Clean Code;
 - ES6 Modules;
-- Padrão Factory;
-- Injeção de dependências;
-- Refatoração de código;
-- Estruturando HTML com tags semânticas;
-- Responsividade com CSS Flex Box e CSS GRID;
-- Unidade de medida flexível;
-- Breakpoints com media query;
-- Posição dos elementos na tela;
-- Importar arquivo de CSS externo no projeto;
-- Aplicando fontes(tipografia) customizadas no arquivo do CSS e iniciar o CSS externo;
-- Trabalhando com cores e fontes;
-- Alinhando e posicionando textos e elementos;
-- Aplicando os espaçamentos;
-- Bordas e classificações de elementos;
-- O conceito Box Model do CSS flexbox e aplicar CSS GRID;
-- Animações CSS e transições;
-- Utilizar variaveis CSS para manipular a paleta de cores do projeto e fontes;
-- Reset CSS removendo possíveis inconsistências entre navegadores diferentes;
-- Estrutura de sistema de arquivos do projeto separado por pasta;
+- Factory Standard;
+- Dependency injection;
+- Refactoring code;
+- Structuring HTML with semantic tags;
+- Responsiveness with CSS Flex Box and CSS GRID;
+- Flexible measurement unit;
+- Breakpoints with media query;
+- Position of elements on the screen;
+- Import external CSS file into the project;
+- Applying custom fonts (typography) in the CSS file and starting the external CSS;
+- Working with colors and fonts;
+- Aligning and positioning texts and elements;
+- Applying the spacing;
+- Borders and element classifications;
+- The Box Model concept of CSS flexbox and applying CSS GRID;
+- CSS animations and transitions;
+- Use CSS variables to manipulate the project's color palette and fonts;
+- CSS Reset removing possible inconsistencies between different browsers;
+- Project file system structure separated by folder;
 
+I applied my knowledge of the Explorer from Rocketseat concepts in a practical way 
+to this project, with the lessons:
 
-Aplicado meu conhecimento do Explorer da Rocketseat conceitos de forma prática 
-nesse projeto, com as aulas:
-
-- Conhecendo novos conceitos de HTML e CSS;
-- Avançando no HTML e CSS;
-- Responsividade;
-- Introdução á Programação, Lógica e Algoritmos com Javascript;
-- Avançando na Programação WEB com Javacript;
+- Introduction to HTML and CSS;
+- Getting to know new concepts of HTML and CSS;
+- Advancing in HTML and CSS;
+- Responsiveness;
+- Introduction to Programming, Logic and Algorithms with Javascript;
+- Advancing in WEB Programming with Javacript;
   
 <br />
 
 - [EXPLORER - Rocketseat](https://www.rocketseat.com.br/explorer)
-- [Figma do Projeto - Focus Timer Dark](https://www.figma.com/file/fWDqeHD7LozcLUQFGU7ItC/Stage-05---Dark-Mode-FocusTimer-(Copy))
+- [Design Figma - Focus Timer Dark](https://www.figma.com/file/fWDqeHD7LozcLUQFGU7ItC/Stage-05---Dark-Mode-FocusTimer-(Copy))
 
-## Imagem do Projeto concluído:
- <img alt="Print do projeto Space cream" title=" Landing page" src="./images/focus-timer-print.png" />
+## Image from the final project:
+ <img alt="Print Focus Timer Dark" title=" Landing page" src="./images/focus-timer-print.png" />
 
  <br />
 
- <p>Gif do Projeto Mobile</p>
-<img alt="Print do projeto Space cream mobile" title=" Landing page" src="./images/focus-timer-mobile.gif" />
+ <p>Gif do Space cream Mobile</p>
+<img alt="Print Focus Timer Dark mobile" title=" Landing page" src="./images/focus-timer-mobile.gif" />
 
-## 🧪 Tecnologias
+## 🧪 Tools
 
-Aplicação desenvolvida usando as seguintes tecnologias:
+Application developed using the following tools:
 
 - [HTML5](https://www.w3schools.com/html/default.asp)
 - [CSS3](https://www.w3schools.com/css/default.asp)
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
-## 🚀 Iniciar Projeto
+## 🚀 Getting started
 
-Clonar Projeto e acesar pasta e iniciar Live server no Visual Studio Code.
+Live server with VScode or just clone folder and access index.html
 
-### Programas necessários para iniciar projeto
+### Programs needed to Getting started
 
 - [Live Server (Opcional)](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [Visual Studio Code - Vscode](https://code.visualstudio.com/)
 
-Clone o projeto e acesso a pasta.
+Clone the project and access the folder
 
 ```bash
 $ git clone https://github.com/felipe-gomes-vicente/focus-timer-dark-light.git
 $ cd focus-timer-dark-light
 ```
 
-## 📝 Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+## 📝 License
+
+This project is under the MIT license. See the file [LICENSE](LICENSE.md) for more details.
 
 ---
 
 &nbsp;
 
-<p align="center">Feito com 💜 by Felipe Vicente👋</p>
+<p align="center">Done with 💜 by Felipe Vicente👋</p>
 
-- ## Meu LinkedIn - [![Linkedin Badge](https://img.shields.io/badge/-FelipeVicente-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/felipe-gomes-vicente/)](https://www.linkedin.com/in/felipe-gomes-vicente/)
+- ## My LinkedIn - [![Linkedin Badge](https://img.shields.io/badge/-FelipeVicente-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/felipe-gomes-vicente/)](https://www.linkedin.com/in/felipe-gomes-vicente/)
