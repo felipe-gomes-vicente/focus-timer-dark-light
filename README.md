@@ -75,7 +75,7 @@ to this project, with the lessons:
 
  <br />
 
- <p>Gif do Space cream Mobile</p>
+ <p>Gif Focus Timer Mobile</p>
 <img alt="Print Focus Timer Dark mobile" title=" Landing page" src="./images/focus-timer-mobile.gif" />
 
 ## 🧪 Tools
