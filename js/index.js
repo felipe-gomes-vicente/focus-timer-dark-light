@@ -38,10 +38,11 @@ const controls = Controls({
   bgRain,
   bgCoffee,
   bgFire,
-  sounds
+  sounds // importado de Sounds
 });
 
 const timer = Timer({
+  sounds, // importado de Sounds
   minutesDisplay,
   secondsDisplay,
   stopControls: controls.stop,
