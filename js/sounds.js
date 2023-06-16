@@ -1,9 +1,5 @@
-const buttonPressAudio = new Audio(
-  "https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true"
-);
-const kitchenTimer = new Audio(
-  "https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true"
-);
+const buttonPressAudio = new Audio("./sounds/button-press.wav");
+const kitchenTimer = new Audio("./sounds/kichen-timer.mp3");
 const bgAudioNature = new Audio("./sounds/Floresta.wav");
 const bgAudioRain = new Audio("./sounds/Chuva.wav");
 const bgAudioCoffee = new Audio("./sounds/Cafeteria.wav");
