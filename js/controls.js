@@ -1,6 +1,3 @@
-import { Sounds } from "./sounds.js";
-const sounds = Sounds();
-
 export function Controls({
   buttonPause,
   buttonPlay,
@@ -14,6 +11,7 @@ export function Controls({
   bgRain,
   bgCoffee,
   bgFire,
+  sounds
 }) {
   let isPlay = true;
   let isDark = true;
