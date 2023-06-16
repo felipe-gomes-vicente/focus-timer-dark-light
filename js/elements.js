@@ -1,59 +1,30 @@
-const minutesDisplay = document.querySelector(".minutes");
-const secondsDisplay = document.querySelector(".seconds");
+export const minutesDisplay = document.querySelector(".minutes");
+export const secondsDisplay = document.querySelector(".seconds");
 
-const buttonPlay = document.querySelector(".play");
-const buttonPause = document.querySelector(".pause");
-const buttonStop = document.querySelector(".stop");
-const buttonIncrement = document.querySelector(".increment");
-const buttonDecrement = document.querySelector(".decrement");
+export const buttonPlay = document.querySelector(".play");
+export const buttonPause = document.querySelector(".pause");
+export const buttonStop = document.querySelector(".stop");
+export const buttonIncrement = document.querySelector(".increment");
+export const buttonDecrement = document.querySelector(".decrement");
 
-const cardOne = document.querySelector(".one");
-const cardTwo = document.querySelector(".two");
-const cardThree = document.querySelector(".three");
-const cardFour = document.querySelector(".four");
-const btnSoundForest = document.querySelector(".forest");
-const btnSoundRain = document.querySelector(".rain");
-const btnSoundCoffeeShop = document.querySelector(".coffee-shop");
-const btnSoundFireplace = document.querySelector(".fireplace");
-const volForest = document.querySelector("#forest");
-const volRain = document.querySelector("#rain");
-const volCoffeeShop = document.querySelector("#coffee-shop");
-const volFireplace = document.querySelector("#fireplace");
+export const cardOne = document.querySelector(".one");
+export const cardTwo = document.querySelector(".two");
+export const cardThree = document.querySelector(".three");
+export const cardFour = document.querySelector(".four");
+export const btnSoundForest = document.querySelector(".forest");
+export const btnSoundRain = document.querySelector(".rain");
+export const btnSoundCoffeeShop = document.querySelector(".coffee-shop");
+export const btnSoundFireplace = document.querySelector(".fireplace");
+export const volForest = document.querySelector("#forest");
+export const volRain = document.querySelector("#rain");
+export const volCoffeeShop = document.querySelector("#coffee-shop");
+export const volFireplace = document.querySelector("#fireplace");
 
-const sunImg = document.querySelector(".sun");
-const moonImg = document.querySelector(".moon");
-const icon = document.getElementById("icon");
+export const sunImg = document.querySelector(".sun");
+export const moonImg = document.querySelector(".moon");
+export const icon = document.getElementById("icon");
 
-const bgNature = document.querySelector(".bgNature");
-const bgRain = document.querySelector(".bgRain");
-const bgCoffee = document.querySelector(".bgCoffee");
-const bgFire = document.querySelector(".bgFire");
-
-export {
-  minutesDisplay,
-  secondsDisplay,
-  buttonPlay,
-  buttonPause,
-  buttonStop,
-  buttonIncrement,
-  buttonDecrement,
-  btnSoundForest,
-  btnSoundRain,
-  btnSoundCoffeeShop,
-  btnSoundFireplace,
-  cardOne,
-  cardTwo,
-  cardThree,
-  cardFour,
-  icon,
-  sunImg,
-  moonImg,
-  volForest,
-  volRain,
-  volCoffeeShop,
-  volFireplace,
-  bgNature,
-  bgRain,
-  bgCoffee,
-  bgFire,
-};
+export const bgNature = document.querySelector(".bgNature");
+export const bgRain = document.querySelector(".bgRain");
+export const bgCoffee = document.querySelector(".bgCoffee");
+export const bgFire = document.querySelector(".bgFire");
